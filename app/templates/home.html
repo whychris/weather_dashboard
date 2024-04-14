@@ -1,5 +1,23 @@
 <!-- templates/home.html -->
 <!DOCTYPE html>
 <html lang="en">
-    
+    <head>
+        <meta charset="UTF-8">
+        <title>Weather Dashboard</title>
+    </head>
+    <body>
+
+        <h1>Enter the coordinate to get weather!</h1>
+
+        <form action="/current_weather" method="get">
+            <label for="lat">Latitude:</label>
+            <input type="text" id="lat" name="lat" required>
+            
+            <label for="lon">Longitude:</label>
+            <input type="text" id="lon" name="lon" required>
+            
+            <button type="submit">Get Weather</button>
+        </form>
+
+    </body>
 </html>
